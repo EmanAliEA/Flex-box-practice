@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --colorbtn: #b2f594;
+  --colorGray: #cbc6c6;
+  --colorbackground: rgb(72 70 70 / 52%);
+  --colorWhite: white;
+  --colorimagebackgroun: #24784594;
+  --colofooter: #b2f59457;
+}
+body {
+  color: white;
+  /* background-color: var(--colorimagebackgroun); */
+  background-image: url("../images/background.jpg"),
+    linear-gradient(
+      to right,
+      var(--colorimagebackgroun),
+      var(--colorimagebackgroun)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+}
+nav {
+  background-color: var(--colorbackground);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 23px;
+  gap: 90px;
+  margin-top: 25px;
+  border-radius: 30px;
+  border: 1px solid #8080807d;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: px;
+}
+.logo-section img {
+  width: 30px;
+  height: 27px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.menu li {
+  padding: 8px 15px;
+  color: var(--colorGray);
+}
+.menu li:hover {
+  background-color: rgb(0 0 0 / 61%);
+  color: var(--colorWhite);
+  border-radius: 20px;
+}
+nav button {
+  font-size: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  background-color: var(--colorbtn);
+}
+nav button:hover {
+  background-color: #938f8fd6;
+  color: rgb(255, 255, 255);
+}
+header {
+  /* background-color: aqua; */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: var(--colorGray);
+}
+header h1 {
+  color: var(--colorWhite);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 12px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+main div {
+  background-color: var(--colorbackground);
+  align-self: stretch;
+  padding: 17px 15px;
+  padding-left: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  color: var(--colorGray);
+  font-size: 13px;
+  width: 235px;
+}
+main div:hover {
+  transform: scale(1.1);
+  border: 1px solid #b2f594a8;
+}
+main div h2 {
+  font-size: 15px;
+  color: var(--colorbtn);
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.price strong {
+  font-size: 30px;
+  color: var(--colorWhite);
+}
+main div p:nth-child(3) strong {
+  color: var(--colorbtn);
+}
+main div p:nth-child(3) {
+  margin-bottom: 25px;
+}
+main div p:nth-child(4) {
+  margin-bottom: 15px;
+  color: var(--colorWhite);
+  font-weight: bold;
+}
+main div li {
+  margin-bottom: 15px;
+}
+main div li p {
+  display: inline-flex;
+}
+main div li::before {
+  content: "\2713";
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 11px;
+  height: 11px;
+  margin-right: 8px;
+  padding: 1px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 12px;
+  color: var(--colorGray);
+  border: 2px solid var(--colorGray);
+  border-radius: 50%;
+  text-align: center;
+}
+.grow button {
+  text-align: center;
+  color: var(--colorbtn);
+  background-color: #b2f59438;
+  padding: 7px 20px;
+  border-radius: 23px;
+  margin: 35px 25px;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+footer {
+  /* background-color: rgb(62 173 23 / 86%); */
+  background-image: url("../images/footer.jpg"),
+    linear-gradient(to right, var(--colofooter), var(--colofooter));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 280px;
+  padding: 20px 25px;
+  border-radius: 43px;
+  color: #f3e2e2;
+}
+footer button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  color: black;
+  background-color: var(--colorbtn);
+  font-weight: bold;
+}
+footer button:hover {
+  background-color: #938f8fd6;
+  color: rgb(255, 255, 255);
+}
